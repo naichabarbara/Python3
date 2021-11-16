@@ -9,7 +9,7 @@ APRENDIZADO EM ANDAMENTO:
  - [x] tipos primitivos de dados;
  - [x] operadores aritméticos;
  - [x] módulos e bibliotecas;
- - [ ] manipulação de strings;
+ - [x] manipulação de strings;
  - [ ] decisões (if..elif..else);
  - [ ] condições aninhadas;
  - [ ] estrutura de repetição;
