@@ -3,15 +3,16 @@ Crie um programa que leia o nome de uma cidade e se ela começa ou não com a pa
 '''
 
 print('*** O programa identfica se o nome da cidade começa com \'Santo\'\n')
-cidade = input('Digite o nome de uma cidade: ')
+cidade = input('Digite o nome de uma cidade: ').strip()
 
-cidade = cidade.strip()
+cidade = cidade.title() #para deixar nomes prórios com letras maiúsculas
 cidade = cidade.split()
 
-if cidade[0] == 'Santo' or cidade[0] == 'santo':
-    print('O nome da cidade \'{}\' começa com a palavra \'Santo\''.format(' '.join(cidade)))
+
+if cidade[0].upper() == 'SANTO':
+    print('A cidade \'{}\' COMEÇA com a palavra \'Santo\''.format(' '.join(cidade)))
 else:
-    print('O nome da cidade \'{}\' não começa com a palavra \'Santo\''.format(' '.join(cidade)))
+    print('A cidade \'{}\' NÃO COMEÇA com a palavra \'Santo\''.format(' '.join(cidade)))
    
     
 print('\n*** FIM ***')

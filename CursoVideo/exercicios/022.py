@@ -7,16 +7,14 @@ Crie um programa que leia o nome completo de uma pessoa e mostre:
 '''
 
 print('*** Manipulando um nome ***\n')
-nome = input('Por favor, digite um nome completo: ')
+nome = input('Por favor, digite um nome completo: ').strip()
 
-nome = nome.strip()
 
 print('\nNome com todas as letras maiúsculas: {}'.format(nome.upper()))
 print('Nome com todas as letras minúsculas: {}'.format(nome.lower()))
 print('Número total de caracteres que compõe o nome: {}'.format(len(nome.replace(" ", "")))) #substitui espaço por nada
 
 nome = nome.split()
-nome = len(nome[0])
-print('O primeiro nome tem {} letras!'.format(nome))
+print('O primeiro nome é {} e tem {} letras!'.format(nome[0], len(nome[0])))
 
 print('\n*** FIM ***')

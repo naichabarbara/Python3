@@ -6,9 +6,14 @@ Leia uma frase e mostre:
 '''
 
 print('*** Encontrando o caracter \'A\' em uma frase ***\n')
-frase = input('Digite uma frase qualquer: ')
+frase = input('Digite uma frase qualquer: ').upper().strip()
 
 
-print('A letra \'A\' aparece {}x na frase {}'.format(frase.count('a' + 'A'), frase))
-print('O primeiro índice da letra \'A\' na frase {} é o índice {}'.format(frase, frase.lower(frase.find('a'))))
+print('A letra \'A\' aparece {}x na frase!'.format(frase.count('A')))
+print('O primeiro índice da letra \'A\' na frase é o índice {}'.format(frase.find('A') + 1)) 
+print('O último índice da letra \'A\' é o índice {}'.format(frase.rfind('A') + 1))
+
+#'+1' reorganiza as posições do Python para começar como indice 1
+
+print('\n*** FIM ***')
 
