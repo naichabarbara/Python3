@@ -11,4 +11,7 @@ if km <= 200:
 else:
     print('Para viagem de {}km a passagem custa R$ {:.2f}'.format(km, (km * 0.45)))
 
-print('\n**** FIM ****')   
+print('\n**** FIM ****') 
+
+#CONDIÇÃO DE MANEIRA SIMPLIFICADA:
+# km = km * 0.50 if km <= 200 else km * 0.45
