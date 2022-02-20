@@ -15,12 +15,9 @@ Não há limitadores e o controle de blocos é feito pela a indentação
 '''
 #Boas práticas: NÃO colocar espaço entre função e comando
 
-
-
 print('Olá, mundo!')
 print(7 + 4) #faz a soma dos números
 print('7' + '4') #por estar em formato de string, faz a JUNÇÃO dos dois números
-
 
 #não é necessário criar váriaveis no topo do código com os tipos
 nome=input('\nDigite o seu nome: ')
