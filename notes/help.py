@@ -60,6 +60,10 @@ print(frase[0:11:2]) #retorna os indices 0,3,5,7,9 - ultimo valor (2) indica o i
 print(frase[:5]) #começa do indice zero (já que não foi especificado) e termina no indice 5
 print(frase[0:]) #oposto do exemplo acima so especificando o começo
 
+list = [a, b, [c, d]] #criação de sublistas
+#para 'puxar' apenas o item C, faremos da seguinte maneira
+print(list[1][0])
+
 print(len(frase)) #exibe o comprimento da frase
 print(frase.count('o')) #conta quantas letras 'o' (minúsculas) tem na frase
 print(frase.find('mando')) #retorna indice inicial da parte especificada do texto

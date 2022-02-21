@@ -2,17 +2,17 @@
 #By: Barbara Naicha
 #github: https://github.com/naichabarbara
 
-def game():
-    import random
-    import time
-    import getpass
+import random
+import time
+import getpass
 
+def game():
     print('\033[32m+{:^15}+'.format('-'*20))
     print('|{:^20}|'.format('GAME TIME!'))
     print('+{:^15}+\033[m'.format('-'*20))
 	
     print('\n\U0001F6A8 I dare you to a game of JOKENPÔ \U0001F6A8')
-    ans = getpass.getpass('\033[31mPress [1] to accept \033[m')
+    ans = getpass.getpass('\033[31mInsert [1] to accept \033[m')
     
     if ans != '1':
         print('\nThat\'s to bad \U0001F610 \nTake care, friend!')
@@ -20,8 +20,8 @@ def game():
     else:
         list = ['rock', 'paper', 'scissors']
 
-        mach = random.choice(list)
         print('\nI will play first \n \033[;7mchoosing...\033[m')
+        mach = random.choice(list)
         time.sleep(2)
         print('I made my choice \U0001F61B')
 
@@ -33,7 +33,7 @@ def game():
             player = input('ERROR! Choose between rock, paper or scissors: ')
             x += 1
             if x > 2:
-                print('\nGame Over')
+                print('\nGame Over!')
 
         #result
         if player == mach:
@@ -48,10 +48,8 @@ def game():
 			
 game()
 
-def restart():
-    import getpass
-    
-    resp = getpass.getpass('\n\033[31mPress [1] to restart \033[m')
+def restart():  
+    resp = getpass.getpass('\n\033[31mInsert [1] to restart \033[m\n')
     if resp == '1':
         game()
         restart()
