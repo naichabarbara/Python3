@@ -15,7 +15,7 @@ def count(x):
     pygame.init() #inicializar o pygame
     pygame.mixer.music.load('stopwatch.mp3')
     pygame.mixer.music.play()
-    print('COUNT IS OVER')
+    print('\033[36mCOUNT IS OVER!\033[m')
 
 print('\U0001F550 Don\'t waste your time \U0001F550\n')		
 sec = int(input('Time to be counted in seconds [for instance: 120 for 2 minutes] '))
