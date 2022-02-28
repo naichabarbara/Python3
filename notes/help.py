@@ -83,10 +83,42 @@ frase.split() #faz a divisão das strings pelos espaços em branco:
 '-'.join(frase) #faz a junção das listas, separadas a cima, com separador '-'
 
 
+#TUPLAS são basicamente listas imutáveis e para criá-las basta usar parenteses
+lista = ('maça', 'pera', 'abacaxi')
+
+
+#DICIONÁRIOS são represemtados por chaves '{}' e seus dados são compostos:
+#nome/idade = chaves   joao/30 = valores    nome;joao = itens
+a = {'nome':'joão', 'idade':30}
+a['nome'] #retorna 'joão'
+('nome', 'joão') in a.itens() #procura itens em um dicionário (tem que criar uma tupla para busca)
+'nome' in a.keys() #modo de procurar chaves
+'joão' in a.values() #modo de procurar valores
+a['nome'] = 'maria' #muda um valor dentro do dicionário (tem que chamar pela a chave)
+a['altura'] = 1.60 #adiciona um valor ao dicionário
+del(a['nome']) #remove o nome da lista
+copia = a.copy() #para copiar um dicionário sem fazer alteração no original
+a.update(copia) #junta os dois dicionários
+
+
 
 #CORES NO TERMINAL
 print("\033[31mTESTE")
-
 #CÓDIGO PADRÃO USADO PARA CORES: \033[ {código da cor} m    //   linkpara códigos > https://raccoon.ninja/pt/dev-pt/tabela-de-cores-ansi-python/
 
-9 - 29 - 
+
+#EXPRESSÕES REGULARES
+import re #biblioteca paratrabalhar com as expressões
+
+string = 'É um teste'
+re.search(r'teste', string) #encontra 'teste' na string e retorna o indice inic/fim da primeira palavra
+re.findall(r'teste', string) #retorna todos os indices que forem encontrados a palavra 'teste'
+re.sub(r'teste', 'ABC', string, count=1) #substitui uma palavra pela a outra (count é para substitir apenas um indice)
+
+#compile pega a expressão regular e trata ela como uma váriavel para ser invocada com suas funções:
+achar = re.compile(r'teste')
+achar.search(string)
+achar.findall(string)
+achar.sub('abc', string)
+
+
